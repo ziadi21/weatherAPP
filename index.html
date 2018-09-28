@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Weather app</title>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Notable" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	 crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+	 crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+	 crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+	 crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+	 crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Exo+2:700|Roboto|Roboto+Mono|Source+Code+Pro" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="script.js">	</script>
+</head>
+
+<body>
+	<section class="body1">
+		<div class="body2">
+			<header>
+				<span>Check Your City Weather Here! </span>
+			</header>
+			<div class="search">
+				<div class="input-group mb-3">
+					<input type="text" id="myInput" class="form-control" placeholder="Enter City name" aria-label=" City name" aria-describedby="basic-addon2"
+					 onkeydown="if (event.keyCode == 13)
+				  document.getElementById('search-btn').click()">
+					<div class="input-group-append">
+						<button id="search-btn" class="btn btn-outline-secondary " onclick="getWeather()" type="button">
+							<i class="fas fa-search"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="weather-info">
+				<h2 class="city-name"> </h2>
+				<h3 class="temp">
+					<span></span>°</h3>
+				<p id="icon"></p>
+				<p class=" description"> </p>
+				<!-- <div class="switch-btn">
+				<span>°C</span>
+				<label class="switch">
+				  <input id="abc" type="checkbox" onclick="toggle()">
+				  <span class="slider round"></span>
+				</label>
+				<span>°F</span>				
+			</div> -->
+				<p class="temp-range">
+					<span class="min"></span> ° /
+					<span class="max"></span>° </p>
+			</div>
+			<!-- <div class="container-fc">
+			  <div class="row">
+			   <div class="col-sm">
+			      <div class="mon">
+						<p class="dayOne">Day</p>
+						<hr>
+						<p id="icona"></p>
+
+						<p class="pre-temp-a">Temp <sup>&#176;</sup></p>
+						<p class="pre-wind-a">Wind</p>
+						<p class="pre-cloud-a">Weather</p>
+					</div>
+			   </div>
+			   <div class="col-sm">
+			      <div class="tue">
+						<p class="dayTwo">Day</p>
+						<hr>
+						<p id="iconb"></p>
+
+						<p class="pre-temp-b">Temp <sup>&#176;</sup></p>
+						<p class="pre-wind-b">Wind</p>
+						<p class="pre-cloud-b">Weather</p>
+					</div>
+			   </div>
+			   <div class="col-sm">
+			      <div class="wed">
+						<p class="dayThree">Day</p>
+						<hr>
+						<p id="iconc"></p>
+
+						<p class="pre-temp-c">Temp <sup>&#176;</sup></p>
+						<p class="pre-wind-c">Wind</p>
+						<p class="pre-cloud-c">Weather</p>
+					</div>
+			   </div>
+			   <div class="col-sm">
+			      <div class="thur">
+						<p class="dayFour">Day</p>
+						<hr>
+						<p id="icond"></p>
+
+						<p class="pre-temp-d">Temp <sup>&#176;</sup></p>
+						<p class="pre-wind-d">Wind</p>
+						<p class="pre-cloud-d">Weather</p>
+					</div>
+			   </div><div class="col-sm">
+			      <div class="fri">
+						<p class="dayFive">Day</p>
+						<hr>
+						<p id="icone"></p>
+
+						<p class="pre-temp-e">Temp <sup>&#176;</sup></p>
+						<p class="pre-wind-e">Wind</p>
+						<p class="pre-cloud-e">Weather</p>
+					</div>
+			   </div>
+			</div> -->
+		</div>
+	</section>
+</body>
+
+</html>
